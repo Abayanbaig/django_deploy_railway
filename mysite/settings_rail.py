@@ -19,14 +19,14 @@ SECRET_KEY = config('SECRET_KEY')
 
 ALLOWED_HOSTS = ['web-production-f709.up.railway.app']
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': config('DATABASE_NAME'),
-        'USER': config('DATABASE_USER'),
-        'PASSWORD': config('DATABASE_PASSWORD'),
-        'HOST':config('DATABASE_HOST'),  # The hostname provided by Railway
-        'PORT': config('DATABASE_PORT'),
-        'options':{'sslmode' : 'require' },
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': config('DATABASE_NAME'),
+#         'USER': config('DATABASE_USER'),
+#         'PASSWORD': config('DATABASE_PASSWORD'),
+#         'HOST':config('DATABASE_HOST'),  # The hostname provided by Railway
+#         'PORT': config('DATABASE_PORT'),
+#         'options':{'sslmode' : 'require' },
+#     }
+# }
